@@ -17,7 +17,7 @@ main{
     min-width: 100%;
     grid-template: 40% 50% 10% / 50% 50%;
     border: 3px solid seagreen;
-    grid-template-areas: "left right""middle""bottom";
+    grid-template-areas: "left right""middle middle""bottom bottom";
     
     
 }
@@ -25,7 +25,7 @@ main{
 
 .left-grid{
     display: grid;
-    grid-area: 1/1/span 1/span 1;
+    grid-area: left;
     
     width: 100%;
     height: 100%;
@@ -86,28 +86,47 @@ main{
 
 
 .right-grid{
-       
     display: grid;
-    grid-area: 1/2/span 1/ span 1;
-    
-    
-    max-width: 100%;
-    max-height: 100%;
-    
+    grid-area: right;
+    grid-template: 100%/10% 90%;
+    grid-template-areas: "non-img-left img-right";
     border: 1px solid magenta;
-    justify-content: center;
+    
+    
+    
 
     
     
 }
+
+
 .right-grid img{
+    width: 100%;
+    height: auto;
+    grid-area: img-right;
+    object-fit: fill;
+    z-index: 5;
     
-    max-width: 60%;
-    max-height: auto;
-    
-    object-fit: none;
+    border: 1px solid saddlebrown;
     
     
+    
+    
+    
+    
+    
+   
+    
+    
+    
+}
+
+.imagetest{
+    border: 1px solid green;
+}
+
+.rightimage{
+    border: 1px solid mediumorchid;
 }
 .get-started{
     width: 30%;
