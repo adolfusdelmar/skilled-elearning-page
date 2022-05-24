@@ -2,10 +2,15 @@ body,html{
     margin: 0;
     padding: 0;
     height: 100%;
+    width: 100%;
+    
     font-family: Plus Jakarta Sans;
     
    
 }
+
+
+
 
 
 *{
@@ -13,8 +18,8 @@ body,html{
 }
 main{
     display: grid;
-    min-height: 100%;
-    min-width: 100%;
+    height: inherit;
+    width: inherit;
     grid-template: 40% 50% 10% / 50% 50%;
     border: 3px solid seagreen;
     grid-template-areas: "left right""middle middle""bottom bottom";
@@ -26,42 +31,60 @@ main{
 .left-grid{
     display: grid;
     grid-area: left;
+    border: 2px solid indigo;
+    justify-content: center;
     
-    width: 100%;
-    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
       
 }
 .site-name{
-    display: grid;
     
-    width: 50%;
-    justify-content: center;
+    min-width: 100%;
+    min-height: 100%;
+    
+    position: relative;
+    
+    
+    
+    
 }
 .skilled{
     
     font-size: 1em;
 }
-.max-skill-budget {
-    display: grid;
-    width: 50%;
-    height: 100%;
-    justify-self: center;
-
+.left-grid h1{
+    font-size: .75em;
+    color: #13183F;
     
     
     
-   
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.left-grid h2{
+    font-style: medium;
+    font-size: .40em;
+    color: #83869a;
+    
+    margin-block-start: 0;
+    margin-block-end: 0
+}
+.intro{
+    border: 1px solid rebeccapurple;
+    width: fit-content;
+    height: fit-content;
+    
 }
 
 
 
 .maximize-skill{
     
-    font-size: 1.5em;
+    font-size: .75em;
     color: #13183F;
     
-    width: fit-content;
-    height: fit-content;
+    
     margin-block-start: 0;
     margin-block-end: 0;
     
@@ -73,24 +96,20 @@ main{
 }
 
 
-.our-modern{
-    
-    font-style: medium;
-    font-size: .50em;
-    color: #83869a;
-    
-    margin-block-start: 0;
-    margin-block-end: 0
-   
-}
+
 
 
 .right-grid{
     display: grid;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
     grid-area: right;
-    grid-template: 100%/10% 90%;
-    grid-template-areas: "non-img-left img-right";
-    border: 1px solid magenta;
+    
+    border: 1px solid chocolate;
+    
+    
     
     
     
@@ -101,33 +120,25 @@ main{
 
 
 .right-grid img{
-    width: 100%;
-    height: auto;
-    grid-area: img-right;
-    object-fit: fill;
-    z-index: 5;
-    
+    position: relative;
     border: 1px solid saddlebrown;
+    object-fit:none;
+    object-position: ;
     
-    
-    
-    
-    
-    
-    
+    justify-self: end;
+    left:60px;
+    bottom: 170px;
    
     
     
+   
+   
     
+    
+   
 }
 
-.imagetest{
-    border: 1px solid green;
-}
 
-.rightimage{
-    border: 1px solid mediumorchid;
-}
 .get-started{
     width: 30%;
     height: 100%;
