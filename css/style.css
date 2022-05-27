@@ -1,10 +1,20 @@
+
+:root{
+    --white:#FFFFFF;
+    --dark-blue:#13183f;
+    --gray:#83869a;
+    --reddish:#f74780;
+    --pinkish:#ffa7c3;
+    --orange-violet-gradient:linear-gradient(#F02AA6-#FF6F48);
+
+}
 body,html{
     margin: 0;
     padding: 0;
-    height: 100%;
-    width: 100%;
+    
     
     font-family: Plus Jakarta Sans;
+    color: var();
     
    
 }
@@ -15,151 +25,7 @@ body,html{
 
 *{
     box-sizing: border-box;
-}
-main{
-    display: grid;
-    height: inherit;
-    width: inherit;
-    grid-template: 40% 50% 10% / 50% 50%;
-    border: 3px solid seagreen;
-    grid-template-areas: "left right""middle middle""bottom bottom";
-    
     
 }
 
 
-.left-grid{
-    display: grid;
-    grid-area: left;
-    border: 2px solid indigo;
-    justify-content: center;
-    
-    min-width: 100%;
-    min-height: 100%;
-      
-}
-.site-name{
-    
-    min-width: 100%;
-    min-height: 100%;
-    
-    position: relative;
-    
-    
-    
-    
-}
-.skilled{
-    
-    font-size: 1em;
-}
-.left-grid h1{
-    font-size: .75em;
-    color: #13183F;
-    
-    
-    
-    margin-block-start: 0;
-    margin-block-end: 0;
-}
-.left-grid h2{
-    font-style: medium;
-    font-size: .40em;
-    color: #83869a;
-    
-    margin-block-start: 0;
-    margin-block-end: 0
-}
-.intro{
-    border: 1px solid rebeccapurple;
-    width: fit-content;
-    height: fit-content;
-    
-}
-
-
-
-.maximize-skill{
-    
-    font-size: .75em;
-    color: #13183F;
-    
-    
-    margin-block-start: 0;
-    margin-block-end: 0;
-    
-    
-   
-    
-    
-
-}
-
-
-
-
-
-.right-grid{
-    display: grid;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-
-    grid-area: right;
-    
-    border: 1px solid chocolate;
-    
-    
-    
-    
-    
-
-    
-    
-}
-
-
-.right-grid img{
-    position: relative;
-    border: 1px solid saddlebrown;
-    object-fit:none;
-    object-position: ;
-    
-    justify-self: end;
-    left:60px;
-    bottom: 170px;
-   
-    
-    
-   
-   
-    
-    
-   
-}
-
-
-.get-started{
-    width: 30%;
-    height: 100%;
-    text-align: center;
-    border-radius: 50px;
-    font-size: 50%;
-    border-style: none;
-    
-    
-    
-    
-}
-
-.middle-grid{
-    grid-area: 2/1/span 2/ span 2;
-   
-    background: linear-gradient(188deg, #FFF 0%,#F0F1FF 100%);
-}
-.bottom{
-    grid-area: 3/1/span 2/span 2;
-    border: 1px solid darkblue;
-    background-color: #13183F;
-
-}
