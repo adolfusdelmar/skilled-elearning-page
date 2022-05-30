@@ -1,0 +1,53 @@
+.head-disc{
+        display: grid;
+        
+        width: 343px;
+        height: auto;
+        grid-template: 101px 78px 100% / 80%;
+        grid-template-areas: 'heading''desc''get-started';
+        row-gap: 26px;
+        
+        h1{
+            width: 343px;
+            height:101px;
+            
+            grid-area: heading;
+            font-weight: 800;
+            font-size: 40px;
+            line-height: 50.4px;
+        }
+        h2{
+            width: 343px;
+            height: 78px;
+            grid-area: desc;
+            
+            font-size:16px;
+            font-weight: 500;
+            line-height: 26px;
+            color:$gray;
+
+        }
+        a{
+            width: 167px;
+            height: 56px;
+            background:$orange-violet-gradient;
+            border-radius: 81px;
+            text-align: center;
+            color: $white;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 26px;
+            
+            
+
+
+            span{
+                width:92px;
+                height: 26px;
+                position: relative;
+                top: 15px;
+            }
+
+        }
+    }

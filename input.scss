@@ -1,0 +1,186 @@
+$white:#ffffff;
+$dark-blue:#13183f;
+$gray:#83869a;
+$reddish:#f74780;
+$pinkish:#ffa7c3,#465;
+$orange-violet-gradient:linear-gradient(to top,#f02aa6,#ff6f48);
+$bluish-purple:linear-gradient(to bottom, #4651ff,#f02aa6);
+
+
+@mixin anti-userstylesheet(){
+    box-sizing: border-box;
+    margin-block:0;
+    margin: 0;
+    padding: 0;
+    font-family: Plus Jakarta Sans;
+    
+    
+}
+*{
+    @include anti-userstylesheet();
+}
+body{
+    width: 100%;
+    height: auto;
+    
+}
+
+@media(min-width:280px){
+header{
+    width: 343;
+        height: 48px;
+        display: grid;
+        grid-template:343px/50% 50%;
+        grid-template-areas: 'site-name get-started';
+        
+        
+        
+        
+        position: relative;
+        left: 5px;
+        
+        
+        margin: 10px;
+
+    title{
+        display: block;
+        font-size: 28px;
+        font-weight: 800;
+        color: var(--dark-blue);
+        grid-area: site-name;
+        
+        width: 89px;
+        height: 35px;
+        position: relative;
+        top: 5px;
+        
+    }
+    a{
+        grid-area: get-started;
+        
+        background-color:$dark-blue;
+        text-align: center;
+        line-height: 45px;
+        justify-self: end;
+        
+        width: 140px;
+        height: 48px;
+        border-radius: 25px;
+        color:$white;
+        text-decoration: none; 
+    }
+}   
+    main{
+        display: grid;
+        width: 100%;
+        height: auto;
+        justify-self: center;
+        justify-items: center;
+
+        .head-disc{
+            display: grid;
+            
+            width: 343px;
+            height: auto;
+            grid-template: 101px 78px 100% / 80%;
+            grid-template-areas: 'heading''desc''get-started';
+            row-gap: 26px;
+            
+            h1{
+                width: 343px;
+                height:101px;
+                
+                grid-area: heading;
+                font-weight: 800;
+                font-size: 40px;
+                line-height: 50.4px;
+            }
+            h2{
+                width: 343px;
+                height: 78px;
+                grid-area: desc;
+                
+                font-size:16px;
+                font-weight: 500;
+                line-height: 26px;
+                color:$gray;
+    
+            }
+            a{
+                width: 167px;
+                height: 56px;
+                background:$orange-violet-gradient;
+                border-radius: 81px;
+                text-align: center;
+                color: $white;
+                text-decoration: none;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 26px;
+                
+                
+    
+    
+                span{
+                    width:92px;
+                    height: 26px;
+                    position: relative;
+                    top: 15px;
+                }
+    
+            }
+        }
+
+    .img-hero{
+        display: grid;
+        grid-template:327px/301px;
+        grid-area:'hero-thumb';
+        
+        justify-items: center;
+        position: relative;
+        top: 46px;
+
+            
+
+        
+        }
+        .popular-courses{
+            display: grid;
+            position: relative;
+            top: 66px;
+            width: 375px;
+            height: 1695px;
+            justify-items: center;
+            .courses{
+               width:343px;
+               height:120px;
+               background: $orange-violet-gradient;
+               color: $white;
+               border-radius: 8px;
+               font-size: 24px;
+               font-weight: 800;
+               
+               line-height: 32px;
+               position: relative;
+               
+               
+
+
+               span{
+                   width:286px;
+                   height: 64px;
+                   position:relative;
+                   top: 24px;
+                   left: 28px;
+                   
+                   
+                   
+                  
+               } 
+            }
+        }
+    }
+
+    
+            
+}
